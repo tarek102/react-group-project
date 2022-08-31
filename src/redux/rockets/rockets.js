@@ -2,7 +2,7 @@ const ROCKET_BOOK = 'space-travelers/rockets/ROCKET_BOOK';
 const ROCKET_CANCEL = 'space-travelers/rockets/ROCKET_CANCEL';
 const ROCKET_ADD = 'space-travelers/rockets/ROCKET_BOOK';
 
-const Api = "https://api.spacexdata.com/v3/rockets";
+const Api = 'https://api.spacexdata.com/v3/rockets';
 
 export const rocketBook = (e) => ({
   type: ROCKET_BOOK,
@@ -25,16 +25,16 @@ export const rocketCancel = (e) => ({
   },
 });
 
-export const fetchRocketApi = () => async(dispatch) => {
+export const fetchRocketApi = () => async (dispatch) => {
   await fetch(Api)
-  .then(response => response.json())
-  .then(data => {
-    const allRockets = data.map(e => {
-      const fetchedData = {};
-      fetchedData.id = e.id;
-      fetchedData.rocket_name = e.rocket_name;
-      fetchedData.description = e.description;
-      fetchedData.flickr_images = e.flickr_images[0];
-    })
-  })
-}
+    .then((response) => response.json())
+    .then((data) => {
+      const allRockets = data.map((e) => {
+        const fetchedData = {};
+        fetchedData.id = e.id;
+        fetchedData.rocket_name = e.rocket_name;
+        fetchedData.description = e.description;
+        fetchedData.flickr_images = e.flickr_images[0];
+      });
+    });
+};
