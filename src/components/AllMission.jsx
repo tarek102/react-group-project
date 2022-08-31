@@ -3,7 +3,9 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../redux/mission/mission';
 
-const AllMission = ({ id, name, description, reserved }) => {
+const AllMission = ({
+  id, name, description, reserved,
+}) => {
   const dispatch = useDispatch();
   return (
     <>
