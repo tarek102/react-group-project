@@ -14,13 +14,14 @@ const AllMission = ({
           {name}
         </th>
         <td className="w-50 text-dark bg-light">{description}</td>
-        <td><span className=" bg-light text-dark">Not a Member</span></td>
         <td>
           {
-          reserved
-            ? <span className="badge bg-info text-white">Active Member</span>
-            : <span className="badge bg-light text-dark">Not a Member</span>
-        }
+            reserved
+              ? <span className="badge bg-info text-white">Active Member</span>
+              : <span className="badge bg-light text-dark">Not a Member</span>
+          }
+        </td>
+        <td>
           {reserved ? (
             <button
               type="button"

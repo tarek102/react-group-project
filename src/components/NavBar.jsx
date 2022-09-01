@@ -14,7 +14,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ms-auto d-flex">
-            <LinkContainer to="/" rel="noopener noreferrer" >
+            <LinkContainer to="/" rel="noopener noreferrer">
               <Nav.Link>Rockets</Nav.Link>
             </LinkContainer>
 
