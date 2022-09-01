@@ -54,7 +54,7 @@ const rocketReducer = (state = [], action) => {
       });
 
     default:
-      return state;
+      
   }
 };
 
