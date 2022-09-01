@@ -19,22 +19,15 @@ export const rocketAdd = (e) => ({
 });
 
 export const rocketCancel = (e) => ({
-  payload: ROCKET_CANCEL,
+  type: ROCKET_CANCEL,
   payload: {
     e,
   },
 });
 
-export const fetchRocketApi = () => async (dispatch) => {
+export const fetchRocketApi = () => async () => {
   await fetch(Api)
     .then((response) => response.json())
-    .then((data) => {
-      const allRockets = data.map((e) => {
-        const fetchedData = {};
-        fetchedData.id = e.id;
-        fetchedData.rocket_name = e.rocket_name;
-        fetchedData.description = e.description;
-        fetchedData.flickr_images = e.flickr_images[0];
-      });
+    .then(() => {
     });
 };

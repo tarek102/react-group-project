@@ -3,7 +3,9 @@ import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../redux/mission/mission';
 
-const AllMission = ({ id, name, description, reserved }) => {
+const AllMission = ({
+  id, name, description, reserved,
+}) => {
   const dispatch = useDispatch();
   return (
     <>
@@ -14,6 +16,11 @@ const AllMission = ({ id, name, description, reserved }) => {
         <td className="w-50 text-dark bg-light">{description}</td>
         <td><span className=" bg-light text-dark">Not a Member</span></td>
         <td>
+          {
+          reserved
+            ? <span className="badge bg-info text-white">Active Member</span>
+            : <span className="badge bg-light text-dark">Not a Member</span>
+        }
           {reserved ? (
             <button
               type="button"
