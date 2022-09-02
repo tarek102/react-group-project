@@ -3,7 +3,7 @@
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
+import store from '../redux/ConfigureStore';
 import Mission from '../components/Mission';
 
 it('missions display correctly', () => {
