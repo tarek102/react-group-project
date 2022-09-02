@@ -7,11 +7,11 @@ const RocketList = (props) => {
 
   return (
     <>
-      <tr>
-        <th scope="row" className="text-dark bg-light">
-          {rocket_name}
-        </th>
-      </tr>
+
+      <li className="text-dark profile-list">
+        {rocket_name}
+      </li>
+
     </>
   );
 };

@@ -6,11 +6,9 @@ const MissionList = (props) => {
 
   return (
     <>
-      <tr>
-        <th scope="row" className="text-dark bg-light">
-          {mission_name}
-        </th>
-      </tr>
+      <li className="text-dark profile-list">
+        {mission_name}
+      </li>
     </>
   );
 };

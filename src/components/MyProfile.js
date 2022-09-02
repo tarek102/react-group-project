@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Table } from 'react-bootstrap';
+// import { Table } from 'react-bootstrap';
 import RocketList from './RocketList';
 import MissionList from './MissionList';
 
@@ -13,8 +13,28 @@ const MyProfile = () => {
   const reservedMissions = missions.filter((mission) => mission.reserved);
 
   return (
-    <div className="col-12 col-md-6">
-      <div className="table-responsive">
+    <div className="col-12 profile-sec">
+      <div>
+        <h3>
+          My Rockets
+        </h3>
+        <ul>
+          {
+              reservedRockets.map((e) => <RocketList key={e.id} rocket_name={e.rocket_name} />)
+          }
+        </ul>
+      </div>
+      <div>
+        <h3>
+          My Missions
+        </h3>
+        <ul>
+          {
+              reservedMissions.map((e) => <MissionList key={e.id} mission_name={e.mission_name} />)
+          }
+        </ul>
+      </div>
+      {/* <div className="table-responsive">
         <Table>
           <thead>
             <tr>
@@ -38,7 +58,7 @@ const MyProfile = () => {
 
           </tbody>
         </Table>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -3,3 +3,50 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.NavContainer {
+  border-bottom: 1px solid rgba(136, 136, 136, 0.349);
+}
+
+.profile-sec {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.profile-sec div {
+  width: 100%;
+  margin: 0 5%;
+}
+
+.profile-sec div ul {
+  border: 1px solid rgba(136, 136, 136, 0.349);
+  border-radius: 5px;
+  padding-left: 0;
+  width: 100%;
+}
+
+.profile-sec div ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-list {
+  list-style: none;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.349);
+}
+
+.list-name {
+  list-style: none;
+}
