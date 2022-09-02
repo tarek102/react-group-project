@@ -1,7 +1,7 @@
 /* eslint-disable camelcase, no-unused-vars, react/prop-types, react/jsx-no-undef, no-undef */
 
 import React from 'react';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import Badge from 'react-bootstrap/Badge';
 import { rocketBook, rocketCancel } from '../redux/rockets/rockets';

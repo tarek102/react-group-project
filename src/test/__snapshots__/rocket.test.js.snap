@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`missions display correctly 1`] = `
+<div
+  className="d-flex flex-wrap flex-lg-nowrap my-2 py-2"
+>
+  <img
+    alt="rocket-one"
+    className="image mx-2"
+    height="220"
+    width="290"
+  />
+  <div
+    className="wrapper d-flex flex-column justify-content-start h-5"
+  >
+    <h2
+      className="rocketName"
+    />
+    <div
+      className="description my-3"
+    />
+    <button
+      className="reserveBtn btn btn-outline-info w-25"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;

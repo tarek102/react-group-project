@@ -2,13 +2,13 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import Mission from '../components/Mission';
+import Rocket from '../components/Rocket';
 
 it('missions display correctly', () => {
   const tree = renderer
     .create(
       <Provider store={store}>
-        <Mission />
+        <Rocket />
       </Provider>,
     )
     .toJSON();
