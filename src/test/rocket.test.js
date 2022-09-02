@@ -9,7 +9,7 @@ it('missions display correctly', () => {
     .create(
       <Provider store={store}>
         <Rocket />
-      </Provider>,
+      </Provider>
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
