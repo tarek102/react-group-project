@@ -5,6 +5,10 @@
 
 In this project we have created a web app that displays Rockets information and images, Missions information and My profile, in both rockets and missions a user can reserve a rocket or join a mission, those reserved services will be shown on My profile page.
 
+## Live Demo
+
+[Live Demo](https://enchanting-clafoutis-fc02da.netlify.app/)
+
 ## Built With
 
 - Javascript
