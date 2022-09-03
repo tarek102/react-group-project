@@ -38,9 +38,9 @@ To successfully utilize this project first of all you need to clone or download 
 - Twitter: [TarekYosry14](https://twitter.com/TarekYosry14)
 
 👤 Esther
-- GitHub: [@githubhandle](https://github.com/eudondian)
-- Twitter: [@twitterhandle](https://twitter.com/eudondian)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/esther-udondian)
+- GitHub: [@eudondian](https://github.com/eudondian)
+- Twitter: [@eudondian](https://twitter.com/eudondian)
+- LinkedIn: [@esther-udondian](https://www.linkedin.com/in/esther-udondian)
 
 
 
